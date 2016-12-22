@@ -54,7 +54,7 @@ p {
 .ryu-throwing {
   /* 3. We're missing the background image of ryu throwing a fireball, let's add it back */
   /* The image that we need to use is ryu-throwing-hadouken.png */
-  /* *Hint* Look at the .ryu-ready and .ryu-still styles. Notice where .. is used. The two dots mean, go out from my current folder*/
+  /* *Hint* Look at the .ryu-ready and .ryu-still styles. Notice where .. is used. The two dots mean, go out from my current folder */
   background-image: ;
 }
 

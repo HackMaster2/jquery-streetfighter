@@ -11,17 +11,18 @@ $(document).ready(function(){
 
 		/* 1. When we have the mouse leave, we want Ryu to get back into the still position
 		   To do so, let's hide .ryu-ready and show .ryu-still
-		   *Hint* See the code above, it's similar to that but the other way around! */
+		   *Hint* See the code above, it's similar but the other way around! */
 		$(".ryu-ready");
 		$(".ryu-still");
 	});
 
 	/* 2. We're missing an event. We want Ryu to shoot a fireball when he is clicked.
-		 Go ahead and add back the click event to the function below */
+		 Go ahead and add back the click event on the line below */
   $(".ryu").(function() {
 
-		/* 3. When we have the mouse down, we want Ryu shoot a fireball
+		/* 3. When we have Ryu shoot a fireball, we want to hide both ready and still states.
 		 To do so, let's hide BOTH .ryu-ready and .ryu-still */
+
 
 		Ryu.fireball();
 	});
@@ -29,10 +30,10 @@ $(document).ready(function(){
 	$("body").keydown(function(e) {
 
 		/* 4. We're missing the keycode for on line 36 and line 45.
-		   Keycodes is how our browser can determine what specific keyboard key has been entered.
+		   Keycodes are how browsers can determine what specific keyboard key has been entered.
 		   They are most often used in key event handlers such as this one.
-		   Use Google to find out what keycode is for 'x' is.
-		   Then use then enter that number value in both line 36 and line 45.
+		   Use Google to find out what the keycode for 'x' is.
+		   Then use then enter that number value in both line 38 and line 46.
 		 */
 		if(e.keyCode == ) {
 			$(".ryu-ready").hide();
@@ -48,7 +49,7 @@ $(document).ready(function(){
 			/* git add . */
 			/* git commit -m "something" */
 			/* git push origin master */
-			/* Submit your Github project link in the Project Submission Form with name jQuery Street Fighter */
+			/* Submit your GitHub project link in the Project Submission Form with name jQuery Street Fighter */
 			$(".ryu-ready").show();
 			$(".ryu-cool").hide();
 			$(".ryu-still").hide();
