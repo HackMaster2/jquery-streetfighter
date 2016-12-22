@@ -29,11 +29,11 @@ $(document).ready(function(){
 	
 	$("body").keydown(function(e) {
 
-		/* 4. We're missing the keycode for on line 36 and line 45.
+		/* 4. We're missing the keycode on line 36 and line 45.
 		   Keycodes are how browsers can determine what specific keyboard key has been entered.
 		   They are most often used in key event handlers such as this one.
 		   Use Google to find out what the keycode for 'x' is.
-		   Then use then enter that number value in both line 38 and line 46.
+		   Then use then enter that number value to the right of == in both line 38 and line 46.
 		 */
 		if(e.keyCode == ) {
 			$(".ryu-ready").hide();
