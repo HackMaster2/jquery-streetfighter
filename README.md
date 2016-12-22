@@ -4,3 +4,5 @@ This project is built for ScriptEd students, but feel free to use and recycle an
 
 To access the game go to:
 https://jwang1919.github.io/jquery-streetfighter
+
+To start coding, start with `index.html`, then `main.css` and finish with `app.js`.
