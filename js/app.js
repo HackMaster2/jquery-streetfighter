@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$(".ryu-still").show();
 	});
 
-  $(".ryu").mousedown(function() {
+  $(".ryu").click(function() {
 		$(".ryu-still").hide();
 		$(".ryu-ready").hide();
 		Ryu.fireball();
@@ -22,7 +22,7 @@ $(document).ready(function(){
 			$(".ryu-still").hide();
 		}
 	});
-	
+
   $("body").keyup(function(e) {
 		if(e.keyCode == 88) {
 			$(".ryu-ready").show();
