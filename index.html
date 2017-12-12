@@ -1,47 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-
-	<!-- **************************************************************** -->
-	<!-- jQuery Street Fighter Part One - Linking stylesheets and scripts -->
-	<!-- **************************************************************** -->
-
-	<!-- 1. We're missing a title here! -->
-	<title></title>
-
-	<link href="css/normalize.css" rel="stylesheet" >
-
-	<!-- 2. Let's add main.css to our page. Note that this CSS file is in the css folder-->
-	<!-- *Hint* Look at how the code above imports normalize.css -->
-	<link href="" rel="stylesheet" >
-
-	<!-- 3. This project uses jQuery, but we haven't imported the library yet. -->
-	<!-- Use Google and search for 'jQuery Library Url'. Note that an https link is required! -->
-	<script src=""></script>
-
-	<!-- 4. Let's add ryuCode.js to our page. Note that this JS file is located in the js folder -->
-	<script src=""></script>
-
-	<!-- 5. Let's add app.js to our page. This JS file is located in the js folder -->
-	<!-- I've given you enough help at this point, time to write the entire script tag yourself -->
-
-
-	<!-- Cool your done with HTML. Time to go to main.css located in the css folder -->
-</head>
-<body>
-	<div id="message">
-		<p>Hover to get Ryu ready. Click Ryu to fire a hadouken. Hold 'X' to make Ryu strike a cool pose.</p>
-	</div>
-	<div class="main">
-		<div class="ryu">
-			<div class="ryu-still"></div>
-			<div class="ryu-ready"></div>
-			<div class="ryu-throwing"></div>
-			<div class="ryu-cool"></div>
-		</div>
-		<div class="hadouken"></div>
-	</div>
-	<audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
-</body>
-</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kingdom Login</title>
+			 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="./css/main.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <body> 
+        <div class="first">
+            <div id="second"></div>
+        <h1 id="pack"><em>The Kingdom of Wolves</em></h1>
+        <p>Username:<input placeholder="Type Here" id="user"><span></span></p>
+        <p>Password:<input placeholder="Type Here if you know" id="pass" type="password"><span></span></p>
+        <button>Login</button>
+        </div>
+        <p id="answer"></p>
+         <script src="./js/app.js"></script>
+    </body>
+</html> 

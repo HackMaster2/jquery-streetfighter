@@ -1,58 +1,41 @@
-$(document).ready(function(){
-	$(".ryu").mouseenter(function() {
-		$(".ryu-still").hide();
-		$(".ryu-ready").show();
-	});
-	
-  $(".ryu").mouseleave(function() {
-		/* ************************************
-		 jQuery Street Fighter Part Three - JS
-		 ************************************** */
-
-		/* 1. When we have the mouse leave, we want Ryu to get back into the still position
-		   To do so, let's hide .ryu-ready and show .ryu-still
-		   *Hint* See the code above, it's similar but the other way around! */
-		$(".ryu-ready");
-		$(".ryu-still");
-	});
-
-	/* 2. We're missing an event. We want Ryu to shoot a fireball when he is clicked.
-		 Go ahead and add back the click event on the line below */
-  $(".ryu").(function() {
-
-		/* 3. When we have Ryu shoot a fireball, we want to hide both ready and still states.
-		 To do so, let's hide BOTH .ryu-ready and .ryu-still */
-
-
-		Ryu.fireball();
-	});
-	
-	$("body").keydown(function(e) {
-
-		/* 4. We're missing the keycode on line 36 and line 45.
-		   Keycodes are how browsers can determine what specific keyboard key has been entered.
-		   They are most often used in key event handlers such as this one.
-		   Use Google to find out what the keycode for 'x' is.
-		   Then use then enter that number value to the right of == in both line 38 and line 46.
-		 */
-		if(e.keyCode == ) {
-			$(".ryu-ready").hide();
-			$(".ryu-cool").show();
-			$(".ryu-still").hide();
-		}
-	});
-	
-  $("body").keyup(function(e) {
-		if(e.keyCode == ) {
-			/* And... we're done! Go preview index.html to see the fruits of our labor! */
-			/* Then afterwards remember to submit the project */
-			/* git add . */
-			/* git commit -m "something" */
-			/* git push origin master */
-			/* Submit your GitHub project link in the Project Submission Form with name jQuery Street Fighter */
-			$(".ryu-ready").show();
-			$(".ryu-cool").hide();
-			$(".ryu-still").hide();
-		}
-	});
+/*global*/
+$("button").click(function(){ 
+    var user = $("#user").val();
+    var pass = $("#pass").val();
+    if(user === "King Dashawn Harrell" && pass === "royalhighmoon"){
+        $("#pack").html("The Royal Moon Kingdom");
+        $("#answer").html("Nice to have you back King Dashawn");
+        //$("body").css("background-color" , "blue");
+         $("body").css("color" , "blue");
+        $("#answer").css("font-size" , "75px");
+    }else if(user === "Beta Alvin Anderson" && pass === "bluemoon"){
+        $("h1").html("The Royal Moon Kingdom");
+        $("#answer").html("Great you're logged in Beta Anderson");
+        $("body").css("color" , "blue");
+        //$("body").css("background-color" , "black");
+    }else if(user === "Queen Victoria Windsor" && pass === "bloodwarmoon"){
+        $("h1").html("The Warrior Kingdom");
+        $("#answer").html("Nice to have you back Queen Victoria");
+        $("body").css("color" , "red");
+        //$("body").css("background-color" , "red");
+    }else if(user === "King Alexander Darrington" && pass === "royalgoldmoon"){
+        $("h1").html("The Royal Gold Kingdom");
+        $("#answer").html("Nice to have you back King Alexander")
+        //$("body").css("background-color" , "#FFD700");
+        $("body").css("color" , "gold");
+    }else if(user === "Queen Elizabeth Darrington" && pass === "queengoldmoon"){
+        $("h1").html("The Royal Gold Kingdom");
+        $("#answer").html("Nice to have you back Queen Elizabeth")
+        //$("body").css("background-color" , "#FFD700");
+        $("body").css("color" , "gold");
+    }else if(user === "King Markus Windsor" && pass === "darkwarmoon"){
+        $("h1").html("The Eclispe Kingdom");
+        //$("body").css("background-color", "white");
+        $("body").css("color" , "black");
+        $("#answer").html("Nice to have you back King Markus")
+    }else {
+    $("#answer").html("Invaild Login Information");
+    $("body").css("color" , "green");
+    //$("body").css("background-color" , "#B22222"b);
+}
 });

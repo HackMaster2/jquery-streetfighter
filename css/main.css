@@ -1,85 +1,40 @@
-/* *************************************
-   jQuery Street Fighter Part Two - CSS
-   ************************************* */
-
-body {
-  /* 1. Our page is too bright. Lets give it a black background color */
-
+body{
+   /* background-color: grey;*/
+    color: black;
+    background-image:url("http://mysticalraven.com/wp-content/uploads/2017/01/wolves-1400819_960_720-800x445.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1500px;}
+button{
+    width: 200px;
+    height:40px;
+    background-color: blue;
+    color: white;
 }
-
-p {
-  /* 2. Uh oh! Now that we changed the background color black we can't see the text. */
-  /* Let's fix it by making the text color black */
-
-  max-width: 320px;
-  margin: auto;
+#pic{
+    
+    height: 200px;
+    width: 250px;
 }
-
-.main {
-	background-color: #fff;
-	margin-top: 55px;
-	padding-left: 100px;
-	width: 100%;
-	height: 500px;
-	position: relative;
-	z-index: 1;
+h1{
+    text-align: center;
+    font-size: 50px;
 }
-
-.ryu {
-    width: 659px;
-    height: 494px;
+.first{
+    text-align: center;
+    font-size: 30px;
 }
-
-.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-  width: 659px;
-  height: 494px;
+user{
+    width:200px;
+    height:30px;
 }
-
-.ryu-ready:hover, .ryu-still:hover, .ryu-throwing:hover, .ryu-cool:hover {
-  cursor: pointer;
+p{
+    font-size: 50px;
 }
-
-.ryu-ready, .ryu-throwing, .ryu-cool {
-  display: none;
-} 
-
-.ryu-ready {
-  background-image: url('../images/ryu-ready-position.gif');
+#answer{
+    text-align:center;
 }
-
-.ryu-still {
-  background-image: url('../images/ryu-standing-still.png');
-}
-
-.ryu-throwing {
-  /* 3. We're missing the background image of ryu throwing a fireball, let's add it back */
-  /* The image that we need to use is ryu-throwing-hadouken.png */
-  /* *Hint* Look at the .ryu-ready and .ryu-still styles. Notice where .. is used. The two dots mean, go out from my current folder */
-  background-image: ;
-}
-
-.ryu-cool {
-  /* 4. We're missing the background image image of ryu with a cool pose, let's add it back */
-  /* The image that we need to use is ryu-cool.gif */
-}
-
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-  background-repeat: no-repeat;
-}
-
-.hadouken {
-  /* 5. Another missing background image... This time the fireball itself is missing. Let's add it back */
-  /* The image that we need to use is hadouken.gif */
-  /* *Hint* You should have noticed a pattern going on with the images and how they are all located in the images folder */
-
-
-  /* Your done with CSS. Finally lets go to app.js located in the js folder */
-  width: 156px; 
-  height: 90px;
-  display: none;
-  position: absolute;
-  z-index: 10;
-  top: 160px;
-  left: 520px;
-  float: left;
+#second{
+    height:200px;
+    width:250;
 }
